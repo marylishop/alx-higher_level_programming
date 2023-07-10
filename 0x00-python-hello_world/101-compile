@@ -1,0 +1,13 @@
+#!/bin/bash
+
+pyfile="$PYFILE"
+output="${pyfile}c"
+
+echo "Compiling $pyfile ..."
+python3 -m py_compile "$pyfile"
+
+if [ -f "$output" ]; then
+  echo "$output created successfully"
+else
+  echo "Failed to create $output"
+fi
