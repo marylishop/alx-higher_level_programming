@@ -1,4 +1,9 @@
 #!/usr/bin/python3
-for i in range(97, 123):
-   if chr(i) != 'q' and chr(i) != 'e':
-    print("{}".format(chr(i)), end="")
+if __name__ == "__main__":
+    """Print the addition of all arguments."""
+    import sys
+
+    total = 0
+    for i in range(len(sys.argv) - 1):
+        total += int(sys.argv[i + 1])
+    print("{}".format(total))
