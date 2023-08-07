@@ -1,0 +1,6 @@
+"""Creating an empty Class"""
+
+
+class Rectangle:
+    """pass to executes empty Class"""
+    pass
